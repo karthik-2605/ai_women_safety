@@ -13,7 +13,7 @@ Our AI-powered model continuously listens for **distress keywords** or **panic t
 Shares the user’s **live location** with guardians or emergency services when in distress.
 
 ### 🆘 Emergency Beacon  
-A **one-tap** or **voice-activated beacon system** that sends alerts, live location, and audio clips to pre-set emergency contacts.
+A **one-tap** or **voice-activated beacon system** that sends alerts and live location to pre-set emergency contacts.
 
 
 ---
