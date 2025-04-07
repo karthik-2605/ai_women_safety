@@ -119,3 +119,124 @@ document.addEventListener("DOMContentLoaded", () => {
     const nav = document.getElementById("navMenu");
     nav.classList.toggle("show");
   }
+
+  let isListening = false;
+  const statusDisplay = document.getElementById('voice-status');
+  
+  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  const recognition = new SpeechRecognition();
+  recognition.continuous = true;
+  recognition.interimResults = false;
+  recognition.lang = 'en-US';
+  
+  recognition.onstart = () => {
+    isListening = true;
+    statusDisplay.textContent = 'Status: Listening...';
+  };
+  
+  recognition.onend = () => {
+    isListening = false;
+    statusDisplay.textContent = 'Status: Not Listening';
+  };
+  
+  recognition.onresult = (event) => {
+    const transcript = event.results[event.results.length - 1][0].transcript.toLowerCase();
+    console.log('Transcript:', transcript);
+    if (transcript.includes('help') || transcript.includes('stop')) {
+      alert("Emergency keyword detected!");
+      // You can also trigger other things here, like:
+      // - Show emergency button
+      // - Send location (if integrated)
+      // - Play siren sound
+    }
+  };
+  
+  document.getElementById('startListeningBtn').addEventListener('click', () => {
+    if (!isListening) {
+      recognition.start();
+    } else {
+      recognition.stop();
+    }
+  });
+  
+      
+      window.addEventListener("DOMContentLoaded", () => {
+        const startBtn = document.getElementById("startListeningBtn");
+        const statusText = document.getElementById("voice-status");
+      
+        if (!('webkitSpeechRecognition' in window)) {
+          statusText.textContent = "Speech Recognition not supported in this browser.";
+          startBtn.disabled = true;
+          return;
+        }
+      
+        const recognition = new webkitSpeechRecognition();
+        recognition.continuous = true;
+        recognition.interimResults = false;
+        recognition.lang = 'en-US';
+      
+        let isListening = false;
+      
+        recognition.onstart = () => {
+          statusText.textContent = "Status: Listening...";
+          startBtn.textContent = "Stop Listening";
+        };
+      
+        recognition.onend = () => {
+          statusText.textContent = "Status: Not Listening";
+          startBtn.textContent = "Start Listening";
+          isListening = false;
+        };
+      
+        recognition.onerror = (event) => {
+          console.error("Speech Recognition Error:", event.error);
+        };
+      
+        recognition.onresult = (event) => {
+          const transcript = event.results[event.results.length - 1][0].transcript.trim().toLowerCase();
+          console.log("Recognized:", transcript);
+      
+          if (transcript.includes("help") || transcript.includes("stop")) {
+            alert("🚨 Emergency Triggered by Voice!");
+            // Optional: call your emergency function here
+          }
+        };
+      
+        startBtn.addEventListener("click", () => {
+          if (!isListening) {
+            recognition.start();
+            isListening = true;
+          } else {
+            recognition.stop();
+          }
+        });
+      });
+      
+      window.addEventListener("load", function () {
+        if (!navigator.geolocation) {
+          alert("Geolocation is not supported by your browser.");
+          return;
+        }
+      
+        navigator.geolocation.getCurrentPosition(function (position) {
+          const lat = position.coords.latitude;
+          const lng = position.coords.longitude;
+      
+          // Initialize Leaflet map
+          const map = L.map('map').setView([lat, lng], 15);
+      
+          // Add OpenStreetMap tiles
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; OpenStreetMap contributors'
+          }).addTo(map);
+      
+          // Add a marker to the user's location
+          L.marker([lat, lng]).addTo(map)
+            .bindPopup('You are here!')
+            .openPopup();
+        }, function () {
+          alert("Unable to retrieve your location.");
+        });
+      });
+      

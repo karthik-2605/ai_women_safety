@@ -387,7 +387,7 @@ footer {
 }
 
 .emergency-btn {
-    background-color: #e76c6c;
+    background-color: #ff2727;
     color: white;
     border: none;
     border-radius: 100%;
@@ -1043,5 +1043,25 @@ h2 {
       text-align: center;
       margin-top: 10px;
     }
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  .emergency-btn {
+    animation: pulse 1.5s infinite;
+  }
+  
+  #map {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  #voice-status {
+    font-weight: bold;
+    margin-top: 1rem;
   }
   
