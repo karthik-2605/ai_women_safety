@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - SafeHer</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <img src="assets/Logofinal.png" alt="SafeHer Logo" class="logo-img" />
+    </header>
+
+
+    <div class="auth-container">
+        <h2>Welcome Back</h2>
+        <p>Login to your SafeHer account</p>
+        <form id="loginForm">
+            <input id="email" type="email" placeholder="Email Address" required />
+            <input id="password" type="password" placeholder="Password" required />
+            <a class="forgot-password" href="#">Forgot password?</a>
+            <button id="submit_login_btn" type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="register.html">Register here</a></p>
+        <hr />
+        <p class="demo-text">For demonstration purposes</p>
+        <button class="demo-btn" onclick="useDemo()">Use Demo Account</button>
+    </div>
+
+    <footer class="footer">
+        &copy; 2025 SafeHer- Hackathon Project<br>Built for women's safety using AI technology
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

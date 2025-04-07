@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - SafeHer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+
+
+
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="assets/Logofinal.png" alt="SafeHer Logo" class="logo-img" />
+        </div>
+
+        <!-- Hamburger icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Navigation links -->
+        <nav class="nav-links" id="navMenu">
+            <button class="nav-btn active" onclick="window.location.href='dashboard.html'"><i class="fa fa-home"></i> Dashboard</button>
+            <button class="nav-btn" onclick="window.location.href='contacts.html'"><i class="fa fa-address-book"></i> Contacts</button>
+            <button class="nav-btn" onclick="window.location.href='settings.html'"><i class="fa fa-cog"></i> Settings</button>
+            <button class="nav-btn" onclick="window.location.href='about.html'"><i class="fa fa-info-circle"></i> About Us</button>
+        </nav>
+
+
+
+        <div class="welcome-text">Welcome</div>
+    </header>
+
+    <main class="dashboard-container">
+        <h2 class="dashboard-title">Safety Dashboard</h2>
+
+        <section class="emergency-card">
+            <h3>Emergency Assistance</h3>
+            <p>Press the emergency button if you need immediate assistance. This will alert your emergency contacts with
+                your location.</p>
+            <button id="emergencyBtn" class="emergency-btn">EMERGENCY</button>
+        </section>
+
+        <section class="feature-cards">
+            <div class="feature-card">
+                <h4>Voice Keyword Trigger</h4>
+                <p>Say "Help" or "Stop" to trigger emergency response</p>
+                <button class="feature-btn" id="startListeningBtn">
+                    <i class="fa fa-microphone"></i> Start Listening
+                </button>
+                <p id="voice-status">Status: Not Listening</p>
+            </div>
+
+            
+            <div class="feature-card">
+                <h4>Status Check-in ( Not functional )</h4>
+                <label>Check-in interval (minutes)</label>
+                <input type="range" id="checkin-slider" min="0" max="2" step="1">
+                <div class="interval-values">
+                    <span>5m</span>
+                    <span>15m</span>
+                    <span>30m</span>
+                </div>
+                <button id="start-checkin" class="feature-btn"><i class="fa fa-bell"></i> Start Status Check-in</button>
+            </div>
+            <div class="feature-card">
+                <h4>Live Location Map</h4>
+                <div id="map" style="height: 200px; border-radius: 8px;"></div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        &copy; 2025 SafeHer - Hackathon Project<br>Built for women's safety using AI technology
+    </footer>
+
+  <script src="app.js"></script>
+  <script>
+    // Get current file name from URL
+    const path = window.location.pathname;
+    const navLinks = document.querySelectorAll('.navbar a');
+  
+    navLinks.forEach(link => {
+      if (path.includes(link.getAttribute('href'))) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>

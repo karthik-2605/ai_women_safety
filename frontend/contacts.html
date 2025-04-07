@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts - SafeHer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+          <img src="assets/Logofinal.png" alt="SafeHer Logo" class="logo-img" />
+        </div>
+      
+        <!-- Hamburger icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+      
+        <!-- Navigation links -->
+        <nav class="nav-links" id="navMenu">
+            <button class="nav-btn" onclick="window.location.href='dashboard.html'"><i class="fa fa-home"></i> Dashboard</button>
+            <button class="nav-btn active" onclick="window.location.href='contacts.html'"><i class="fa fa-address-book"></i> Contacts</button>
+            <button class="nav-btn" onclick="window.location.href='settings.html'"><i class="fa fa-cog"></i> Settings</button>
+            <button class="nav-btn" onclick="window.location.href='about.html'"><i class="fa fa-info-circle"></i> About Us</button>
+        </nav>
+      
+        <div class="welcome-text">Welcome</div>
+      </header>
+
+    <!-- Main Section -->
+    <div class="dashboard-container">
+        <div class="dashboard-content">
+            
+            <p>Add emergency contacts who will be notified in case of an emergency. You can mark important contacts as
+                emergency contacts to ensure they receive alerts when you need help.</p>
+
+            <div class="contacts-box">
+                <h2>Emergency Contacts</h2>
+
+                <!-- Dynamic Contact List -->
+                <div id="contactList" class="contact-list">
+                    <!-- Contacts will be added here dynamically -->
+                </div>
+
+                <!-- Add New Contact Form -->
+                <div class="add-contact">
+                    <h2>Add New Contact</h2>
+                    <input id="contactName" type="text" placeholder="Contact Name" class="contact-input" />
+                    <input id="contactNumber" type="text" placeholder="Phone Number" class="contact-input" />
+                    <button id="contactAddBtn" type="button" class="add-contact-btn">Add Contact</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer">
+        &copy; 2025 SafeHer - Hackathon Project<br>Built for women's safety using AI technology
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+        // Get current file name from URL
+        const path = window.location.pathname;
+        const navLinks = document.querySelectorAll('.navbar a');
+      
+        navLinks.forEach(link => {
+          if (path.includes(link.getAttribute('href'))) {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');
+          }
+        });
+      </script>
+
+</body>
+
+</html>
