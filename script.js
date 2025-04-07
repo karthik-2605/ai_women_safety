@@ -115,3 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
     alert(`Status check-in started at ${selected} minute intervals.`);
   });
   
+  function toggleMenu() {
+    const nav = document.getElementById("navMenu");
+    nav.classList.toggle("show");
+  }

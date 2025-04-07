@@ -879,3 +879,169 @@ h2 {
     margin-bottom: 0.8rem;
     font-size: 1.3rem;
 }
+
+/* Tablet view */
+@media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .nav-btn {
+      width: 100%;
+      text-align: left;
+      padding: 10px 0;
+    }
+  
+    .welcome-text {
+      text-align: center;
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .feature-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .feature-card {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  /* Mobile view */
+  @media screen and (max-width: 480px) {
+    .dashboard-title {
+      font-size: 20px;
+    }
+  
+    .emergency-card {
+      padding: 15px;
+    }
+  
+    .emergency-btn {
+      width: 100%;
+      font-size: 14px;
+      padding: 12px;
+    }
+  
+    .feature-btn {
+      width: 100%;
+      font-size: 13px;
+      padding: 10px;
+    }
+  
+    .interval-values {
+      font-size: 11px;
+      padding: 0 5px;
+    }
+  
+    #checkin-slider {
+      width: 100%;
+    }
+  
+    .footer {
+      font-size: 11px;
+      padding: 10px;
+    }
+  }
+  
+
+  /* Hide hamburger by default */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  margin-right: 15px;
+}
+
+/* Responsive navbar styles */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #0f3c4b; /* same as navbar bg */
+    margin-top: 10px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-btn {
+    width: 100%;
+    text-align: left;
+    padding: 12px;
+    border-top: 1px solid #fff2;
+  }
+
+  .welcome-text {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+/* Hide hamburger by default */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    margin-right: 15px;
+  }
+  
+  /* Responsive navbar styles */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #0f3c4b; /* same as navbar bg */
+      margin-top: 10px;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  
+    .nav-btn {
+      width: 100%;
+      text-align: left;
+      padding: 12px;
+      border-top: 1px solid #fff2;
+    }
+  
+    .welcome-text {
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+  
