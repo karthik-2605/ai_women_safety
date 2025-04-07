@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - Voice Alert Beacon</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo"><span class="highlight">Voice</span> Alert Beacon</div>
+    <nav class="nav-links">
+      <button class="nav-btn active"><i class="fa fa-home"></i> Dashboard</button>
+      <button class="nav-btn"><i class="fa fa-address-book"></i> Contacts</button>
+      <button class="nav-btn"><i class="fa fa-cog"></i> Settings</button>
+    </nav>
+    <div class="welcome-text">Welcome, Team Defence</div>
+  </header>
+
+  <main class="dashboard-container">
+    <h2 class="dashboard-title">Safety Dashboard</h2>
+
+    <section class="emergency-card">
+      <h3>Emergency Assistance</h3>
+      <p>Press the emergency button if you need immediate assistance. This will alert your emergency contacts with your location.</p>
+      <button class="emergency-btn">EMERGENCY</button>
+    </section>
+
+    <section class="feature-cards">
+      <div class="feature-card">
+        <h4>Voice Distress Detection</h4>
+        <button class="feature-btn"><i class="fa fa-volume-up"></i> Start Listening</button>
+        <p class="feature-info">Voice detection listens for words like "help", "emergency", or "stop"</p>
+      </div>
+      <div class="feature-card">
+        <h4>Location Tracking <span class="status inactive">Inactive</span></h4>
+        <button class="feature-btn">Start Tracking</button>
+        <p class="feature-info">Location tracking is disabled</p>
+      </div>
+      <div class="feature-card">
+        <h4>Status Check-in</h4>
+        <label>Check-in interval (minutes)</label>
+        <input type="range" min="5" max="60" step="5">
+        <button class="feature-btn"><i class="fa fa-bell"></i> Start Status Check-in</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

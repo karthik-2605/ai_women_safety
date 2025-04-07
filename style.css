@@ -1,86 +1,408 @@
-/* style.css */
+/* General Styles */
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f0f9f8;
     margin: 0;
-    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f3fdfc;
+    color: #333;
   }
   
-  .navbar, .footer {
-    background-color: #0d294f;
+  header {
+    background-color: #112b52;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1, footer h1 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  header h1 span, footer h1 span {
+    color: #00b4d8;
+  }
+  
+  .auth-container, .dashboard-container {
+    background: #fff;
+    max-width: 100%;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .auth-container h2, .dashboard-container h2 {
+    margin-bottom: 10px;
+    color: #1b2c51;
+  }
+  
+  .auth-container p, .dashboard-container p {
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  button {
+    background-color: #1b2c51;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0f1e3d;
+  }
+  
+  a {
+    color: #1b2c51;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    background-color: #112b52;
+    padding: 10px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .forgot-password {
+    font-size: 13px;
+    text-align: right;
+  }
+  
+  .demo-text {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .demo-btn {
+    background-color: white;
+    color: #1b2c51;
+    border: 2px solid #1b2c51;
+    margin-top: 10px;
+    transition: all 0.3s;
+  }
+  
+  .demo-btn:hover {
+    background-color: #1b2c51;
+    color: white;
+  }
+  
+
+  /* === NAVBAR === */
+.navbar {
+    background-color: #0a2a47;
     color: white;
     padding: 1rem 2rem;
-    text-align: center;
-  }
-  
-  .highlight {
-    color: #3ba4ff;
-  }
-  
-  .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 80vh;
   }
   
-  .form-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 400px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    text-align: center;
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .logo .highlight {
+    color: #9ef3f2;
   }
   
-  .form-card h2 {
-    margin-bottom: 0.5rem;
-    color: #0d294f;
+  .nav-links {
+    display: flex;
+    gap: 1rem;
   }
   
-  .form-card p {
-    color: #555;
-    margin-bottom: 1rem;
+  .nav-btn {
+    background: none;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
   }
   
-  form input {
-    width: 100%;
-    padding: 0.75rem;
-    margin: 0.5rem 0;
+  .nav-btn.active {
+    background-color: #b0e0dc;
+    color: #0a2a47;
     border-radius: 8px;
-    border: 1px solid #ccc;
   }
   
-  .link-row {
-    text-align: right;
-    margin-bottom: 1rem;
-  }
-  
-  .link-row a {
+  .welcome-text {
     font-size: 0.9rem;
-    text-decoration: none;
-    color: #007bff;
+    color: #9ef3f2;
   }
   
-  .btn-primary {
-    width: 100%;
-    padding: 0.75rem;
-    background-color: #0d294f;
+  /* === DASHBOARD === */
+  .dashboard-container {
+    padding: 2rem;
+    background-color: #f1fafa;
+  }
+  
+  .dashboard-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #0a2a47;
+  }
+  
+  /* Emergency Card */
+  .emergency-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .emergency-card h3 {
+    color: #0a2a47;
+    margin-bottom: 0.5rem;
+  }
+  
+  .emergency-card p {
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+  
+  .emergency-btn {
+    background-color: #e76c6c;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 100px;
+    padding: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 150px;
+    height: 150px;
     cursor: pointer;
+  }
+  
+  /* Feature Cards */
+  .feature-cards {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .feature-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .feature-card h4 {
+    color: #0a2a47;
     margin-bottom: 1rem;
   }
   
-  .btn-outline {
-    width: 100%;
-    padding: 0.75rem;
-    background-color: transparent;
-    color: #0d294f;
-    border: 2px solid #0d294f;
+  .status {
+    font-size: 0.8rem;
+    padding-left: 5px;
+  }
+  
+  .status.inactive {
+    color: gray;
+  }
+  
+  .feature-btn {
+    background-color: #3b768d;
+    color: white;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .feature-info {
+    font-size: 0.85rem;
+    color: #777;
+    margin-top: 0.8rem;
+  }
+  
+
+  /* General Reset & Body Style */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4fcff;
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #0a2a47;
+    color: white;
+    padding: 0.8rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .logo .highlight {
+    color: #9ef3f2;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-btn {
+    background: none;
+    border: none;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
     border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-btn.active {
+    background-color: #b0e0dc;
+    color: #0a2a47;
+  }
+  
+  .welcome-text {
+    font-size: 0.9rem;
+    color: #9ef3f2;
+  }
+  
+  /* Dashboard Container */
+  .dashboard-container {
+    padding: 2rem 3rem;
+    background-color: #f1fafa;
+  }
+  
+  .dashboard-content {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Emergency Assistance Card */
+  .emergency-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .emergency-card h3 {
+    color: #0a2a47;
+    margin-bottom: 0.5rem;
+  }
+  
+  .emergency-card p {
+    color: #555;
+    margin-bottom: 1.5rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+  }
+  
+  .emergency-btn {
+    background-color: #e76c6c;
+    color: white;
+    border: none;
+    border-radius: 100%;
+    padding: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Feature Cards Layout */
+  .feature-cards {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .feature-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    flex: 1;
+    min-width: 280px;
+    max-width: 320px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Buttons & Info inside Feature Cards */
+  .feature-card h4 {
+    color: #0a2a47;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-btn {
+    background-color: #3b768d;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .feature-btn:hover {
+    background-color: #346672;
+  }
+  
+  .feature-info {
+    font-size: 0.85rem;
+    color: #777;
+    margin-top: 1rem;
+  }
+  
+  .status {
+    font-size: 0.8rem;
+    padding-left: 5px;
+  }
+  
+  .status.inactive {
+    color: gray;
   }
   

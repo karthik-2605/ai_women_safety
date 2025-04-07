@@ -1,36 +1,29 @@
-<!-- register.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Register | Voice Alert Beacon</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Register - Voice Alert Beacon</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <nav class="navbar">
-    <h2><span class="highlight">Voice</span> Alert Beacon</h2>
-  </nav>
+  <header>
+    <h1><span>Voice</span> Alert Beacon</h1>
+  </header>
 
-  <div class="container">
-    <div class="form-card">
-      <h2>Create Your Account</h2>
-      <p>Join Voice Alert Beacon for enhanced safety</p>
-      <form id="registerForm">
-        <input type="text" placeholder="Full Name" required />
-        <input type="email" placeholder="Email Address" required />
-        <input type="text" placeholder="Phone Number" required />
-        <input type="password" placeholder="Password" required />
-        <input type="password" placeholder="Confirm Password" required />
-        <button type="submit" class="btn-primary">Register</button>
-      </form>
-      <p>Already have an account? <a href="index.html">Login here</a></p>
-    </div>
+  <div class="auth-container">
+    <h2>Create Your Account</h2>
+    <p>Join Voice Alert Beacon for enhanced safety</p>
+    <form>
+      <input type="text" placeholder="Full Name" required/>
+      <input type="email" placeholder="Email Address" required/>
+      <input type="tel" placeholder="Phone Number" required/>
+      <input type="password" placeholder="Password" required/>
+      <input type="password" placeholder="Confirm Password" required/>
+      <button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <a href="index.html">Login here</a></p>
   </div>
-
-  <footer class="footer">
-    <h3><span class="highlight">Voice</span>Alert Beacon</h3>
-  </footer>
 
   <script src="script.js"></script>
 </body>

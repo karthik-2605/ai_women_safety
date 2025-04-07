@@ -1,37 +1,33 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login | Voice Alert Beacon</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Voice Alert Beacon</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <nav class="navbar">
-    <h2><span class="highlight">Voice</span> Alert Beacon</h2>
-  </nav>
+  <header>
+    <h1><span>Voice</span> Alert Beacon</h1>
+  </header>
 
-  <div class="container">
-    <div class="form-card">
-      <h2>Welcome Back</h2>
-      <p>Login to your Voice Alert Beacon account</p>
-      <form id="loginForm">
-        <input type="email" placeholder="Email Address" required />
-        <input type="password" placeholder="Password" required />
-        <div class="link-row">
-          <a href="#">Forgot password?</a>
-        </div>
-        <button type="submit" class="btn-primary">Login</button>
-      </form>
-      <p>Don't have an account? <a href="register.html">Register here</a></p>
-      <hr />
-      <button class="btn-outline">Use Demo Account</button>
-    </div>
+  <div class="auth-container">
+    <h2>Welcome Back</h2>
+    <p>Login to your Voice Alert Beacon account</p>
+    <form>
+      <input type="email" placeholder="Email Address" required/>
+      <input type="password" placeholder="Password" required/>
+      <a class="forgot-password" href="#">Forgot password?</a>
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="register.html">Register here</a></p>
+    <hr />
+    <p class="demo-text">For demonstration purposes</p>
+    <button class="demo-btn" onclick="useDemo()">Use Demo Account</button>
   </div>
 
-  <footer class="footer">
-    <h3><span class="highlight">Voice</span>Alert Beacon</h3>
+  <footer>
+    <h1><span>Voice</span>Alert Beacon</h1>
   </footer>
 
   <script src="script.js"></script>
