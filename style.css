@@ -2,91 +2,108 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background-color: #f3fdfc;
+    background-color: #b0e0dc;
     color: #333;
-  }
-  
-  header {
+}
+
+header {
     background-color: #112b52;
     padding: 5px;
     text-align: center;
-  }
-  .logo-img {
-    height: 100px; /* or adjust size as needed */
+}
+
+.logo-img {
+    height: 100px;
+    /* or adjust size as needed */
     display: block;
     margin: 0 auto;
-  }
-  .logo img{
-    height: 60px; /* or adjust size as needed */
+}
+
+.logo img {
+    height: 60px;
+    /* or adjust size as needed */
     display: block;
     margin: 0 auto;
-  }
-  
-  
-  header h1, footer h1 {
+}
+
+
+header h1,
+footer h1 {
     color: white;
     font-size: 24px;
     margin: 0;
-  }
-  
-  header h1 span, footer h1 span {
+}
+
+header h1 span,
+footer h1 span {
     color: #00b4d8;
-  }
-  /* === AUTH CONTAINER === */
+}
+
+/* === AUTH CONTAINER === */
 .auth-container {
     background: #fff;
     max-width: 400px;
     margin: 40px auto;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     text-align: center;
-  }
-  
-  .auth-container h2 {
+}
+
+.auth-container h2 {
     margin-bottom: 10px;
     color: #1b2c51;
-  }
-  
-  .auth-container p {
+}
+
+.auth-container p {
     margin-bottom: 20px;
     color: #555;
-  }
-  
-  /* === DASHBOARD CONTAINER === */
-  .dashboard-container {
+}
+
+/* === DASHBOARD CONTAINER === */
+.dashboard-container {
     background: #fff;
     max-width: 100%;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     text-align: center;
-  }
-  
-  .dashboard-container h2 {
+}
+
+.dashboard-container h2 {
     margin-bottom: 10px;
     color: #1b2c51;
-  }
-  
-  .dashboard-container p {
+}
+
+.dashboard-container p {
     margin-bottom: 20px;
     color: #555;
-  }
-  
-  form {
+}
+
+form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-  }
-  
-  input {
-    padding: 12px;
+}
+
+input {
+    padding: 20px;
     border-radius: 6px;
     border: 1px solid #ccc;
     font-size: 14px;
-  }
-  
-  button {
+}
+
+#checkin-slider {
+    padding: 0px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 95%;
+    /* Adjust this value as needed */
+    max-width: 300px;
+}
+
+button {
     background-color: #1b2c51;
     color: white;
     padding: 12px;
@@ -94,53 +111,53 @@ body {
     border-radius: 6px;
     font-size: 16px;
     cursor: pointer;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #b0e0dc98;
-  }
-  
-  a {
+}
+
+a {
     color: #1b2c51;
     text-decoration: none;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     text-decoration: underline;
-  }
-  
-  footer {
+}
+
+footer {
     background-color: #112b52;
     padding: 10px;
     text-align: center;
 
-  }
-  
-  .forgot-password {
+}
+
+.forgot-password {
     font-size: 13px;
     text-align: right;
-  }
-  
-  .demo-text {
+}
+
+.demo-text {
     font-size: 12px;
     color: #666;
-  }
-  
-  .demo-btn {
+}
+
+.demo-btn {
     background-color: white;
     color: #1b2c51;
     border: 2px solid #1b2c51;
     margin-top: 10px;
     transition: all 0.3s;
-  }
-  
-  .demo-btn:hover {
+}
+
+.demo-btn:hover {
     background-color: #1b2c51;
     color: white;
-  }
-  
+}
 
-  /* === NAVBAR === */
+
+/* === NAVBAR === */
 .navbar {
     background-color: #0a2a47;
     color: white;
@@ -152,80 +169,81 @@ body {
     position: sticky;
     z-index: 1000;
     transition: box-shadow 0.3s ease-in-out;
-  }
-  
-  /* Shadow effect class */
-  .navbar.scrolled {
-    box-shadow:0 4px 10px rgb(103 199 245 / 53%);
-  }
-  
-  
-  .logo {
+}
+
+/* Shadow effect class */
+.navbar.scrolled {
+    box-shadow: 0 4px 10px rgb(103 199 245 / 53%);
+}
+
+
+.logo {
     font-size: 1.5rem;
     font-weight: bold;
-  }
-  .logo .highlight {
+}
+
+.logo .highlight {
     color: #9ef3f2;
-  }
-  
-  .nav-links {
+}
+
+.nav-links {
     display: flex;
     gap: 1rem;
-  }
-  
-  .nav-btn {
+}
+
+.nav-btn {
     background: none;
     border: none;
     color: white;
     padding: 0.5rem 1rem;
     font-size: 1rem;
     cursor: pointer;
-  }
-  
-  .nav-btn.active {
+}
+
+.nav-btn.active {
     background-color: #b0e0dc;
     color: #0a2a47;
     border-radius: 8px;
-  }
-  
-  .welcome-text {
+}
+
+.welcome-text {
     font-size: 0.9rem;
     color: #9ef3f2;
-  }
-  
-  /* === DASHBOARD === */
-  .dashboard-container {
+}
+
+/* === DASHBOARD === */
+.dashboard-container {
     padding: 2rem;
     background-color: #f1fafa;
-  }
-  
-  .dashboard-title {
+}
+
+.dashboard-title {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     color: #0a2a47;
-  }
-  
-  /* Emergency Card */
-  .emergency-card {
+}
+
+/* Emergency Card */
+.emergency-card {
     background: white;
     border-radius: 10px;
     padding: 2rem;
     text-align: center;
     margin-bottom: 2rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  }
-  
-  .emergency-card h3 {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.emergency-card h3 {
     color: #0a2a47;
     margin-bottom: 0.5rem;
-  }
-  
-  .emergency-card p {
+}
+
+.emergency-card p {
     color: #555;
     margin-bottom: 1.5rem;
-  }
-  
-  .emergency-btn {
+}
+
+.emergency-btn {
     background-color: #e76c6c;
     color: white;
     border: none;
@@ -236,40 +254,40 @@ body {
     width: 150px;
     height: 150px;
     cursor: pointer;
-  }
-  
-  /* Feature Cards */
-  .feature-cards {
+}
+
+/* Feature Cards */
+.feature-cards {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
-  }
-  
-  .feature-card {
+}
+
+.feature-card {
     background: white;
     border-radius: 10px;
     padding: 1.5rem;
     flex: 1;
     min-width: 250px;
     text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  }
-  
-  .feature-card h4 {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card h4 {
     color: #0a2a47;
     margin-bottom: 1rem;
-  }
-  
-  .status {
+}
+
+.status {
     font-size: 0.8rem;
     padding-left: 5px;
-  }
-  
-  .status.inactive {
+}
+
+.status.inactive {
     color: gray;
-  }
-  
-  .feature-btn {
+}
+
+.feature-btn {
     background-color: #3b768d;
     color: white;
     padding: 0.7rem 1rem;
@@ -278,48 +296,41 @@ body {
     border-radius: 6px;
     margin-top: 0.5rem;
     cursor: pointer;
-  }
-  
-  .feature-info {
+}
+
+.feature-info {
     font-size: 0.85rem;
     color: #777;
     margin-top: 0.8rem;
-  }
-  
+}
 
-  /* General Reset & Body Style */
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f4fcff;
-    color: #333;
-  }
-  
-  /* Navbar */
-  .navbar {
+
+
+/* Navbar */
+.navbar {
     background-color: #0a2a47;
     color: white;
     padding: 0.8rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .logo {
+}
+
+.logo {
     font-size: 1.5rem;
     font-weight: bold;
-  }
-  
-  .logo .highlight {
+}
+
+.logo .highlight {
     color: #9ef3f2;
-  }
-  
-  .nav-links {
+}
+
+.nav-links {
     display: flex;
     gap: 1.5rem;
-  }
-  
-  .nav-btn {
+}
+
+.nav-btn {
     background: none;
     border: none;
     color: white;
@@ -328,54 +339,54 @@ body {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .nav-btn.active {
+}
+
+.nav-btn.active {
     background-color: #b0e0dc;
     color: #0a2a47;
-  }
-  
-  .welcome-text {
+}
+
+.welcome-text {
     font-size: 0.9rem;
     color: #9ef3f2;
-  }
-  
-  /* Dashboard Container */
-  .dashboard-container {
+}
+
+/* Dashboard Container */
+.dashboard-container {
     padding: 2rem 3rem;
-    background-color: #f1fafa;
-  }
-  
-  .dashboard-content {
+    background-color: #b0e0dc;
+}
+
+.dashboard-content {
     max-width: 1200px;
     margin: auto;
-  }
-  
-  /* Emergency Assistance Card */
-  .emergency-card {
+}
+
+/* Emergency Assistance Card */
+.emergency-card {
     background: white;
     border-radius: 10px;
     padding: 2rem;
     text-align: center;
     margin-bottom: 2rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  }
-  
-  .emergency-card h3 {
+}
+
+.emergency-card h3 {
     color: #0a2a47;
     margin-bottom: 0.5rem;
-  }
-  
-  .emergency-card p {
+}
+
+.emergency-card p {
     color: #555;
     margin-bottom: 1.5rem;
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.5;
-  }
-  
-  .emergency-btn {
+}
+
+.emergency-btn {
     background-color: #e76c6c;
     color: white;
     border: none;
@@ -389,17 +400,17 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  /* Feature Cards Layout */
-  .feature-cards {
+}
+
+/* Feature Cards Layout */
+.feature-cards {
     display: flex;
     gap: 1.5rem;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
-  
-  .feature-card {
+}
+
+.feature-card {
     background: white;
     border-radius: 10px;
     padding: 1.5rem;
@@ -408,15 +419,15 @@ body {
     max-width: 320px;
     text-align: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  }
-  
-  /* Buttons & Info inside Feature Cards */
-  .feature-card h4 {
+}
+
+/* Buttons & Info inside Feature Cards */
+.feature-card h4 {
     color: #0a2a47;
     margin-bottom: 1rem;
-  }
-  
-  .feature-btn {
+}
+
+.feature-btn {
     background-color: #3b768d;
     color: white;
     padding: 0.7rem 1.2rem;
@@ -426,39 +437,40 @@ body {
     margin-top: 0.5rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .feature-btn:hover {
+}
+
+.feature-btn:hover {
     background-color: #346672;
-  }
-  
-  .feature-info {
+}
+
+.feature-info {
     font-size: 0.85rem;
     color: #777;
     margin-top: 1rem;
-  }
-  
-  .status {
+}
+
+.status {
     font-size: 0.8rem;
     padding-left: 5px;
-  }
-  
-  .status.inactive {
+}
+
+.status.inactive {
     color: gray;
-  }
-  .contacts-box {
+}
+
+.contacts-box {
     background: white;
     border-radius: 12px;
     padding: 2rem;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
     max-width: 600px;
     margin: 2rem auto;
-  }
-  
-  .contact-entry {
+}
+
+.contact-entry {
     display: flex;
-    justify-content:space-between;
-    align-items:center;
+    justify-content: space-between;
+    align-items: center;
     align-content: center;
     border: 1px solid #e1eaea;
     border-radius: 8px;
@@ -466,15 +478,15 @@ body {
     margin-bottom: 1rem;
     font-size: 1rem;
     background-color: #f9fdfd;
-  }
-  
-  .contact-actions {
+}
+
+.contact-actions {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-  }
-  
-  .contact-btn {
+}
+
+.contact-btn {
     background-color: #c8f1f0;
     border: none;
     padding: 0.5rem 1rem;
@@ -482,30 +494,30 @@ body {
     cursor: pointer;
     font-size: 0.9rem;
     color: #0a2a47;
-  }
-  
-  .contact-remove {
+}
+
+.contact-remove {
     background: none;
     border: none;
     font-size: 1.2rem;
     color: #999;
     cursor: pointer;
-  }
-  
-  .add-contact {
+}
+
+.add-contact {
     margin-top: 2rem;
-  }
-  
-  .contact-input {
+}
+
+.contact-input {
     width: 95%;
     padding: 0.7rem;
     margin: 0.5rem 0;
     border-radius: 6px;
     border: 1px solid #ccc;
     font-size: 1rem;
-  }
-  
-  .add-contact-btn {
+}
+
+.add-contact-btn {
     background-color: #276e8d;
     color: white;
     border: none;
@@ -515,23 +527,25 @@ body {
     border-radius: 8px;
     cursor: pointer;
     margin-top: 0.5rem;
-  }
-  .contact-info {
+}
+
+.contact-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 0.2rem;
-  }
-  
-  .contact-name {
+}
+
+.contact-name {
     font-size: 1rem;
-  }
-  
-  .contact-number {
+}
+
+.contact-number {
     font-size: 0.95rem;
     color: #444;
-  }
-  .contact-remove {
+}
+
+.contact-remove {
     background-color: red;
     color: white;
     border: none;
@@ -545,185 +559,323 @@ body {
     justify-content: center;
     padding: 0;
     line-height: 1;
-  }
-  .contact-remove:hover {
+}
+
+.contact-remove:hover {
     background-color: darkred;
-  }
-  
-  .contact-entry:hover {
+}
+
+.contact-entry:hover {
     transform: scale(1.03);
-    background-color: #ffe5e5; /* Light red */
-  }
-  
-  .settings-container {
+    background-color: #ffe5e5;
+    /* Light red */
+}
+
+.settings-container {
     max-width: 800px;
     margin: auto;
     padding: 20px;
-  }
-  
-  h1 {
+}
+
+h1 {
     text-align: center;
-    color: #1f2937; /* Dark gray for headings */
-  }
-  
-  h2 {
-    color: #1f2937; /* Dark gray for section titles */
-  }
-  
-  /* Profile Information Section */
-  .profile-info,
-  .app-settings,
-  .emergency-test {
-    background-color: #ffffff; /* White card background */
+    color: #1f2937;
+    /* Dark gray for headings */
+}
+
+h2 {
+    color: #1f2937;
+    /* Dark gray for section titles */
+}
+
+/* Profile Information Section */
+.profile-info,
+.app-settings,
+.emergency-test {
+    background-color: #ffffff;
+    /* White card background */
     border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for card effect */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for card effect */
     padding: 20px;
     margin-bottom: 20px;
-  }
-  
-  .profile-info h2,
-  .app-settings h2,
-  .emergency-test h2 {
+}
+
+.profile-info h2,
+.app-settings h2,
+.emergency-test h2 {
     font-size: 18px;
     margin-bottom: 15px;
-  }
-  
-  /* Form Styling */
-  .form-group {
+}
+
+/* Form Styling */
+.form-group {
     margin-bottom: 15px;
-  }
-  
-  .form-group label {
+}
+
+.form-group label {
     display: block;
     font-weight: bold;
-  }
-  
-  .form-group input {
+}
+
+.form-group input {
     width: calc(100% - 10px);
     padding: 10px;
     border-radius: 5px;
-    border: solid #e5e7eb thin; /* Light gray border */
-  }
-  
-  /* Settings Item */
-  .app-settings .setting-item {
+    border: solid #e5e7eb thin;
+    /* Light gray border */
+}
+
+/* Settings Item */
+.app-settings .setting-item {
     display: flex;
-    justify-content: space-between; /* Distribute space evenly */
-    align-items: center;          /* Vertically align items */
-    margin-bottom: 15px;          /* Add space between setting items */
-    padding: 10px;              /* Add some padding inside each item */
-  }
-  
-  /* Setting Text Area */
-  .setting-item .setting-text {
-    flex-grow: 1;                /* Allow text to take up remaining space */
-  }
-  
-  .setting-item .setting-text span {
-    font-weight: bold;            /* Make setting titles bold */
-    display: block;              /* Ensure it stacks above the description */
-    margin-bottom: 5px;          /* Space between title and description */
-  }
-  
-  .setting-item .setting-text p {
-    color: #6b7280;              /* Gray color for descriptions */
-    font-size: 0.9em;            /* Slightly smaller font size */
-    margin-bottom: 0;            /* Remove extra bottom margin */
-  }
-  
-  /* Toggle Switch */
-  .setting-item .toggle-switch {
-    flex-shrink: 0;              /* Prevent shrinking */
-  }
-  
-  /* Hide the default checkbox */
-  .switch input {
+    justify-content: space-between;
+    /* Distribute space evenly */
+    align-items: center;
+    /* Vertically align items */
+    margin-bottom: 15px;
+    /* Add space between setting items */
+    padding: 10px;
+    /* Add some padding inside each item */
+}
+
+/* Setting Text Area */
+.setting-item .setting-text {
+    flex-grow: 1;
+    /* Allow text to take up remaining space */
+}
+
+.setting-item .setting-text span {
+    font-weight: bold;
+    /* Make setting titles bold */
+    display: block;
+    /* Ensure it stacks above the description */
+    margin-bottom: 5px;
+    /* Space between title and description */
+}
+
+.setting-item .setting-text p {
+    color: #6b7280;
+    /* Gray color for descriptions */
+    font-size: 0.9em;
+    /* Slightly smaller font size */
+    margin-bottom: 0;
+    /* Remove extra bottom margin */
+}
+
+/* Toggle Switch */
+.setting-item .toggle-switch {
+    flex-shrink: 0;
+    /* Prevent shrinking */
+}
+
+/* Hide the default checkbox */
+.switch input {
     display: none;
-  }
-  
-  /* The track of the toggle switch */
-  .switch {
+}
+
+/* The track of the toggle switch */
+.switch {
     position: relative;
     display: inline-block;
     width: 50px;
     height: 24px;
-  }
-  
-  .switch .slider {
+}
+
+.switch .slider {
     position: absolute;
     cursor: pointer;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc; /* Default background color */
+    background-color: #ccc;
+    /* Default background color */
     transition: background-color 0.3s ease-in-out;
-    border-radius: 24px; /* Rounded edges for the track */
-  }
-  
-  /* The circular knob of the toggle switch */
-  .switch .slider::before {
+    border-radius: 24px;
+    /* Rounded edges for the track */
+}
+
+/* The circular knob of the toggle switch */
+.switch .slider::before {
     content: '';
     position: absolute;
     height: 20px;
     width: 20px;
     left: 2px;
     bottom: 2px;
-    background-color: white; /* Knob color */
-    border-radius: 50%; /* Circular shape */
-    transition: transform 0.3s ease-in-out; /* Smooth movement */
-  }
-  
-  /* When the checkbox is checked */
-  .switch input:checked + .slider {
-    background-color: #1f2937; /* Dark blue background when toggled on */
-  }
-  
-  .switch input:checked + .slider::before {
-    transform: translateX(26px); /* Move the knob to the right */
-  }
-  
-  /* Emergency System Test Section */
-  .emergency-test p {
-      color: #6b7280;
-  }
-  
-  #test-alert-btn, #save-settings-btn {
-      background-color: #1f2937; /* Dark blue button */
-      color: white;
-      border: none;
-      border-radius: 5px;
-      padding: 10px 15px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      display: block;
-      margin: 20px auto;
-  }
-  
-  #test-alert-btn:hover, #save-settings-btn:hover {
-      background-color: #374151; /* Darker shade on hover */
-  }
-  
-  /* Footer */
-  .footer {
+    background-color: white;
+    /* Knob color */
+    border-radius: 50%;
+    /* Circular shape */
+    transition: transform 0.3s ease-in-out;
+    /* Smooth movement */
+}
+
+/* When the checkbox is checked */
+.switch input:checked+.slider {
+    background-color: #1f2937;
+    /* Dark blue background when toggled on */
+}
+
+.switch input:checked+.slider::before {
+    transform: translateX(26px);
+    /* Move the knob to the right */
+}
+
+/* Emergency System Test Section */
+.emergency-test p {
+    color: #6b7280;
+}
+
+#test-alert-btn,
+#save-settings-btn {
+    background-color: #1f2937;
+    /* Dark blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 20px auto;
+}
+
+#test-alert-btn:hover,
+#save-settings-btn:hover {
+    background-color: #374151;
+    /* Darker shade on hover */
+}
+
+/* Footer */
+.footer {
     text-align: center;
     padding: 20px;
-    background-color: #e5e7eb; /* Light gray background for footer */
-    color: #4b5563; /* Gray color for text */
-  }
+    background-color: #e5e7eb;
+    /* Light gray background for footer */
+    color: #4b5563;
+    /* Gray color for text */
+}
 
 /* Add to your existing CSS */
 .interval-slider {
     width: 90%;
     margin: 10px 0;
-  }
-  
-  .interval-values {
+}
+
+.interval-values {
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 15px;
     color: #555;
     font-size: 0.9rem;
-  }
-  
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #fff;
+    color: #1b2c51;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.7;
+}
+
+.about-container h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #0a2a47;
+}
+
+.about-container h2 span {
+    color: #e63946;
+    /* light red used elsewhere */
+}
+
+.about-container p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #0a2a47;
+}
+
+/* About Section */
+.about-section {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.8rem;
+    color: #0a2a47;
+    margin-bottom: 2rem;
+}
+
+.about-card {
+    background: linear-gradient(to right, #161e30, #0f1523);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* What We Do Section */
+.features-section {
+    padding: 3rem 2rem 5rem;
+    background-color: #b0e0dc;
+    text-align: center;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-card1 {
+    background: linear-gradient(to right, #1a1f33, #121a2f);
+    border-radius: 16px;
+    padding: 1.5rem;
+    width: 280px;
+    color: #e0e0e0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.feature-card1:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card1 h3 {
+    color: #b0e0dc;
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+}

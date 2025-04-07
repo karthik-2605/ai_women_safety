@@ -100,4 +100,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
   
+  const slider = document.getElementById('checkin-slider');
+  const startButton = document.getElementById('start-checkin');
+  
+  const intervals = [5, 15, 30];
+  
+  slider.addEventListener('input', () => {
+    const selected = intervals[parseInt(slider.value)];
+    startButton.innerText = `🔔 Start Status Check-in (${selected} min)`;
+  });
+  
+  startButton.addEventListener('click', () => {
+    const selected = intervals[parseInt(slider.value)];
+    alert(`Status check-in started at ${selected} minute intervals.`);
+  });
   
