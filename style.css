@@ -477,7 +477,7 @@ body {
   }
   
   .contact-input {
-    width: 100%;
+    width: 95%;
     padding: 0.7rem;
     margin: 0.5rem 0;
     border-radius: 6px;
@@ -533,5 +533,178 @@ body {
   .contact-entry:hover {
     transform: scale(1.03);
     background-color: #ffe5e5; /* Light red */
+  }
+  
+  .settings-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #1f2937; /* Dark gray for headings */
+  }
+  
+  h2 {
+    color: #1f2937; /* Dark gray for section titles */
+  }
+  
+  /* Profile Information Section */
+  .profile-info,
+  .app-settings,
+  .emergency-test {
+    background-color: #ffffff; /* White card background */
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for card effect */
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-info h2,
+  .app-settings h2,
+  .emergency-test h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  /* Form Styling */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: calc(100% - 10px);
+    padding: 10px;
+    border-radius: 5px;
+    border: solid #e5e7eb thin; /* Light gray border */
+  }
+  
+  /* Settings Item */
+  .app-settings .setting-item {
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly */
+    align-items: center;          /* Vertically align items */
+    margin-bottom: 15px;          /* Add space between setting items */
+    padding: 10px;              /* Add some padding inside each item */
+  }
+  
+  /* Setting Text Area */
+  .setting-item .setting-text {
+    flex-grow: 1;                /* Allow text to take up remaining space */
+  }
+  
+  .setting-item .setting-text span {
+    font-weight: bold;            /* Make setting titles bold */
+    display: block;              /* Ensure it stacks above the description */
+    margin-bottom: 5px;          /* Space between title and description */
+  }
+  
+  .setting-item .setting-text p {
+    color: #6b7280;              /* Gray color for descriptions */
+    font-size: 0.9em;            /* Slightly smaller font size */
+    margin-bottom: 0;            /* Remove extra bottom margin */
+  }
+  
+  /* Toggle Switch */
+  .setting-item .toggle-switch {
+    flex-shrink: 0;              /* Prevent shrinking */
+  }
+  
+  /* Hide the default checkbox */
+  .switch input {
+    display: none;
+  }
+  
+  /* The track of the toggle switch */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+  }
+  
+  .switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc; /* Default background color */
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 24px; /* Rounded edges for the track */
+  }
+  
+  /* The circular knob of the toggle switch */
+  .switch .slider::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white; /* Knob color */
+    border-radius: 50%; /* Circular shape */
+    transition: transform 0.3s ease-in-out; /* Smooth movement */
+  }
+  
+  /* When the checkbox is checked */
+  .switch input:checked + .slider {
+    background-color: #1f2937; /* Dark blue background when toggled on */
+  }
+  
+  .switch input:checked + .slider::before {
+    transform: translateX(26px); /* Move the knob to the right */
+  }
+  
+  /* Emergency System Test Section */
+  .emergency-test p {
+      color: #6b7280;
+  }
+  
+  #test-alert-btn, #save-settings-btn {
+      background-color: #1f2937; /* Dark blue button */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      display: block;
+      margin: 20px auto;
+  }
+  
+  #test-alert-btn:hover, #save-settings-btn:hover {
+      background-color: #374151; /* Darker shade on hover */
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e5e7eb; /* Light gray background for footer */
+    color: #4b5563; /* Gray color for text */
+    margin-top: 20px;
+  }
+
+/* Add to your existing CSS */
+.interval-slider {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .interval-values {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 0.9rem;
   }
   
