@@ -21,8 +21,29 @@ body {
   header h1 span, footer h1 span {
     color: #00b4d8;
   }
+  /* === AUTH CONTAINER === */
+.auth-container {
+    background: #fff;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    text-align: center;
+  }
   
-  .auth-container, .dashboard-container {
+  .auth-container h2 {
+    margin-bottom: 10px;
+    color: #1b2c51;
+  }
+  
+  .auth-container p {
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  /* === DASHBOARD CONTAINER === */
+  .dashboard-container {
     background: #fff;
     max-width: 100%;
     margin: 40px auto;
@@ -32,12 +53,12 @@ body {
     text-align: center;
   }
   
-  .auth-container h2, .dashboard-container h2 {
+  .dashboard-container h2 {
     margin-bottom: 10px;
     color: #1b2c51;
   }
   
-  .auth-container p, .dashboard-container p {
+  .dashboard-container p {
     margin-bottom: 20px;
     color: #555;
   }
@@ -404,5 +425,113 @@ body {
   
   .status.inactive {
     color: gray;
+  }
+  .contacts-box {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    max-width: 600px;
+    margin: 2rem auto;
+  }
+  
+  .contact-entry {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    align-content: center;
+    border: 1px solid #e1eaea;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    background-color: #f9fdfd;
+  }
+  
+  .contact-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .contact-btn {
+    background-color: #c8f1f0;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #0a2a47;
+  }
+  
+  .contact-remove {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #999;
+    cursor: pointer;
+  }
+  
+  .add-contact {
+    margin-top: 2rem;
+  }
+  
+  .contact-input {
+    width: 100%;
+    padding: 0.7rem;
+    margin: 0.5rem 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .add-contact-btn {
+    background-color: #276e8d;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
+  
+  .contact-name {
+    font-size: 1rem;
+  }
+  
+  .contact-number {
+    font-size: 0.95rem;
+    color: #444;
+  }
+  .contact-remove {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    line-height: 1;
+  }
+  .contact-remove:hover {
+    background-color: darkred;
+  }
+  
+  .contact-entry:hover {
+    transform: scale(1.03);
+    background-color: #ffe5e5; /* Light red */
   }
   
