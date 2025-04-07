@@ -33,7 +33,7 @@
       
         <div class="welcome-text">Welcome, Team Defence</div>
       </header>
-      
+
     <!-- Main Section -->
     <div class="dashboard-container">
         <div class="dashboard-content">
@@ -44,45 +44,17 @@
             <div class="contacts-box">
                 <h2>Emergency Contacts</h2>
 
-                <div class="contact-entry">
-                    <div class="contact-info">
-                        <div class="contact-name">👤 <strong>Police</strong></div>
-                        <div class="contact-number">📞 100</div>
-                    </div>
-
-                    <div class="contact-actions">
-                        <button class="contact-remove">✖</button>
-                    </div>
-                </div>
-
-                <div class="contact-entry">
-                    <div class="contact-info">
-                        <div class="contact-name">👤 <strong>Women Helpline</strong></div>
-                        <div class="contact-number">📞 1091</div>
-                    </div>
-
-                    <div class="contact-actions">
-
-                        <button class="contact-remove">✖</button>
-                    </div>
-                </div>
-                <div class="contact-entry">
-                    <div class="contact-info">
-                        <div class="contact-name">👤 <strong>Ambulance</strong></div>
-                        <div class="contact-number">📞 108</div>
-                    </div>
-
-                    <div class="contact-actions">
-                        <button class="contact-remove">✖</button>
-                    </div>
+                <!-- Dynamic Contact List -->
+                <div id="contactList" class="contact-list">
+                    <!-- Contacts will be added here dynamically -->
                 </div>
 
                 <!-- Add New Contact Form -->
                 <div class="add-contact">
                     <h2>Add New Contact</h2>
-                    <input type="text" placeholder="Contact Name" class="contact-input" />
-                    <input type="text" placeholder="Phone Number" class="contact-input" />
-                    <button class="add-contact-btn">Add Contact</button>
+                    <input id="contactName" type="text" placeholder="Contact Name" class="contact-input" />
+                    <input id="contactNumber" type="text" placeholder="Phone Number" class="contact-input" />
+                    <button id="contactAddBtn" type="button" class="add-contact-btn">Add Contact</button>
                 </div>
             </div>
 
