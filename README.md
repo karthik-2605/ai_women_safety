@@ -31,3 +31,17 @@ A **one-tap** or **voice-activated beacon system** that sends alerts and live lo
 ---
 
 > 👩‍💻 Built with a mission to make safety smarter, faster, and more accessible.
+>
+> ## 🔧 Installation
+
+### 📋 Prerequisites
+
+- npm (Node Package Manager)
+- Twilio 
+
+### 📥 Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/mindful-ai-emotion-analyzer.git
+cd mindful-ai-emotion-analyzer
+
