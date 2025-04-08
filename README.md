@@ -31,8 +31,8 @@ A **one-tap** or **voice-activated beacon system** that sends alerts and live lo
 ---
 
 > 👩‍💻 Built with a mission to make safety smarter, faster, and more accessible.
->
-> ## 🔧 Installation
+
+## 🔧 Installation
 
 ### 📋 Prerequisites
 
@@ -42,6 +42,10 @@ A **one-tap** or **voice-activated beacon system** that sends alerts and live lo
 ### 📥 Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/mindful-ai-emotion-analyzer.git
+git clone https://github.com/karthik-2605/ai_women_safety.git
 cd mindful-ai-emotion-analyzer
+node server.js
+
+```
+Set up MySql database and run locally to test
 
