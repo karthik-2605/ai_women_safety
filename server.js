@@ -8,18 +8,18 @@ const path = require('path');
 
 // Configuration
 const app = express();
-const port = 3000;
-const SECRET_KEY = '9820256@9820256@women_safety_ai'; // Replace with a secure secret
+const port = //port//;
+const SECRET_KEY = //REPLACE_WITH_SECURE_KEY; // Replace with a secure secret
 
 // MySQL Connection Pool
 const pool = mysql.createPool({
-    host: 'localhost',
-    user: 'root',
-    password: '9820256@MajorK',
-    database: 'women_safety',
-    waitForConnections: true,
-    connectionLimit: 10,
-    queueLimit: 0
+    host: //*//,
+    user: //*//,
+    password: //*//,
+    database: //*//,
+    waitForConnections: //*//,
+    connectionLimit: //*//,
+    queueLimit: //*//
 });
 
 // Middleware
@@ -197,9 +197,9 @@ const twilio = require('twilio');
 
  // Environment variables and secrets
 
- const accountSid = 'AC4dee3f9b5c8780aed9b915ac54360f8a';
- const authToken = 'ba83f683dff4f61ad6139d2482ee9ecb';
- const twilioPhoneNumber = '+12517661464';
+ const accountSid = //sid//;
+ const authToken = //token//;
+ const twilioPhoneNumber = //twilio_number//;
 
 
  const twilioClient = twilio(accountSid, authToken);
